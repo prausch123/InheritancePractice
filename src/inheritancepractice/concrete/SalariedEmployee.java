@@ -8,6 +8,15 @@ package inheritancepractice.concrete;
  *
  * @author Peter
  */
-public class SalariedEmployee {
+public class SalariedEmployee extends Employee{
+    int salary;
     
+    public SalariedEmployee(String name, String position, int age, int salary) {
+        super(name, position, age);
+        this.salary = salary;
+    }
+    
+    public int getSalary() {
+        return this.salary;
+    }
 }
